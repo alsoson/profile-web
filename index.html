@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.1.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Zhen's Website</title>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="ms-3 me-1" src="./images/name/favicon-128x128.png" width="45" alt="">
+        Zhen's Website
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse "  id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-lg-auto ">
+          <li class="nav-item">
+            <a class="nav-link navbar-a text-white" href="#profile">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-a text-white" href="#work">我的作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-a text-white" href="#exp">我的經歷</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link navbar-a text-white" href="#skill">我的專業
+            </a>
+          </li>
+          <!-- <li class="nav-item ">
+            <button type="button" class="btn text-white navbar-a" data-bs-toggle="modal" data-bs-target="#connect">
+              聯絡我
+            </button>
+          
+            </a>
+          </li> -->
+          <!-- <li class="nav-item me-3">
+            <a class="nav-link" href="#footer-id">咖啡故事</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 聯絡我 -->
+  <div class="modal fade" id="connect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bg-navbar" style="border-radius:16px">
+      <div class="modal-content bg-navbar" style="border-radius:16px">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">聯絡我</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 關於我 -->
+  <div id="profile" class="container-fluid px-0" style="height:100vh" >
+    <video src="/images/profile/third.mp4" style="width:100%;object-fit: cover;height:100%" bottom autoplay loop muted></video>
+    <div class="flex-center" style="position: absolute;top:55px;width:100%;height:calc( 100% - 55px)">
+      <div class="row" style="width:100%;height:100%">
+        <div class="col-12 col-md-5 flex-center">
+          <div class="avatar">
+            <img src="/images/profile/avatar-big.jpg" alt="" style="object-fit:cover;width:100%;height:100%;border-radius:16px">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 flex-center mt-minus" >
+          <div class="">
+            <h6 class="text-white mb-3" style="font-size: 25px;font-weight:700;">您好 我是盧真莉</h6>
+            <div class="flex-center q-pa-md " style="background:rgba(203, 222, 241, 0.3);border-radius:16px;flex-direction: column;">
+              <!-- style="font-size: 20px;font-weight:600;color:#0c193b;line-height:2;" -->
+              <p class="p-3 profile-p" style="font-size: 20px;font-weight:600;color:#0c193b;line-height:2;">畢業於高雄科技大學觀光管理系，畢業前一直有服務業的工作經驗，有責任心、也能和同事相觸融洽，更喜歡挑戰自我，畢業後因疫情影響，開始拓展自我跑道，於是2022年3月在泰山職訓局開始學習 936 小時前端網頁開發課程。
+                <img src="/images/name/favicon-128x128.png" width="50px" height="50px"/>
+              </p>
+              <div style="margin-top:-5%">
+                <a class="btn mb-2" href="https://github.com/alsoson?tab=repositories" class="bg-navbar" role="button" style="border-radius:50%;width:40px;height:40px;background-color: rgba(38, 166, 154,0.9);">
+                  <img src="/images/profile/github.svg" class="text-white" style="color:white;width:100%;object-fit: cover;" alt="">
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 我的作品 -->
+  <div id="work">
+    <div class="box mt-5">
+      <h6 class="text-center text-blueGreen" style="font-size:25px;font-weight:600">我的作品<hr class="text-blueGreen mx-auto" style="width:100px;"></h6>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="image1 image"></div>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <div class="image2 image"></div>
+        </div>
+      </div>
+      <div style="background:rgba(203, 222, 241,0.5);border-radius:16px" class="text-center p-3">
+        <div class="flex-center mx-auto" style="flex-direction:row;">
+          <a class="flex flex-center text-blueGreenDeep" href="https://alsoson.github.io/halal-front/#/" style="text-decoration: none;">
+            <img class="img-hand" src="/images/work/LOGO.png" width="50px" alt="">
+            <h6 class="my-auto mx-2 text-blueGreenDeep" style="font-weight:600"> Hello ! Halal</h6>
+          </a>
+        </div>
+        </a>
+        <p class="text-center mx-auto my-3 text-dark-page" style="width:80%;font-size:14px;">
+          一個提供穆斯林旅客訂購團體旅遊的網站，除了讓提供穆斯林旅客翻閱台灣清真餐廳、住宿、景點外，也使國人了解穆斯林文化。
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h6 class="mb-2">使用者前台 <hr style="width:50px" class="mx-auto"></h6>
+            <ul class="text-left my-none ms-3">
+              <li>會員註冊、登入</li>
+              <li>提供清真文化介紹</li>
+              <li>提供清真餐廳、飯店、景點翻閱</li>
+              <li>行程加入購物車、我的最愛</li>
+              <li>查看、修改會員資料</li>
+              <li>查看會員訂單詳細資訊</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <h6 class="mb-2" >管理者後台 <hr style="width:50px" class="mx-auto"></h6>
+            <ul class="text-left q-my-none ms-3">
+              <li>管理者新增行程</li>
+              <li>使用關鍵字查詢行程</li>
+              <li>修改發布至前台的行程、刪除行程</li>
+              <li>修改發布至前台的留言內容</li>
+              <li>查看、刪除會員</li>
+              <li>查看會員訂單詳細資訊</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 q-mb-3">
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://github.com/alsoson/line-KH">
+            <img src="/images/work/line-KH.png" class="img-fluid" style="width:100%;height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none ">高雄景點 Line Bot</h6>
+                <q-btn class="bg-primary text-white" icon="mdi-github" round href="https://github.com/alsoson/line-KH"></q-btn>
+              </div>
+              <p class="q-py-sm">提供熱門、推薦、私房、更多景點作為景點分類查詢，設置圖文選單快速點選。</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://alsoson.github.io/card/">
+            <img src="/images/work/sorryTeacher.jpg" class="img-fluid" style="height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none">國文老師 對不起</h6>
+              </div>
+              <p class="q-py-sm">一款了解疊字中文發音的配對遊戲，希望大家都可以記得國文老師的教導。</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://alsoson.github.io/calculator/">
+            <img src="/images/work/calsulator.jpg" class="img-fluid" style="height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none">星空流星計算機</h6>
+              </div>
+              <p class="q-py-sm">線上計算機，放空時可以看看流星，算錯了也可以看流星然後再算一次。</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://alsoson.github.io/clock/">
+            <img src="/images/work/Alice.png" class="img-fluid" style="height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none">愛麗絲夢遊仙境鐘</h6>
+              </div>
+              <p class="q-py-sm">以愛麗絲夢遊仙境為主題的時鐘，增加css動畫效果，以及動圖兔子增加定格感。</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://alsoson.github.io/css_template/">
+            <img src="/images/work/css_template.png" class="img-fluid" style="height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none">復刻版型</h6>
+              </div>
+              <p class="q-py-sm">挑選以萬聖節為主題板模，以純 CSS 方式刻畫，提升自己刻板能力。</p>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 q-pa-sm col-card">
+          <a class="bg-positive card my-1 card-big-work" href="https://alsoson.github.io/bs_layout/">
+            <img src="/images/work/bs_layout.png" class="img-fluid" style="height:200px;object-fit:cover"></img>
+            <div class="p-3">
+              <div class="flex justify-between">
+                <h6 class="q-ma-none">Bootstrap 刻板</h6>
+              </div>
+              <p class="q-py-sm">以 Bootstrap 方式，刻畫出泰山咖啡莊園，學習 Bootstrap ，增進自我。</p>
+            </div>
+          </a>
+        </div>
+      <!-- Button trigger modal -->
+        <button type="button" class="btn mx-auto my-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        style="background:rgb(18, 65, 61);color:white;width:200px">
+          更多作品
+        </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" >
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row px-2">
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2" style="border-radius: 16px;">
+            <a class="small-work" href="https://alsoson.github.io/css_youtube/">
+              <div style="background:url(/images/work/css_youtube.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word" >
+                  <h5 class="text-white">以 CSS 刻 Youtube</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+            <a class="small-work" href="https://alsoson.github.io/backdrop-filter/">
+              <div style="background:url(/images/work/css_backdrop.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word">
+                  <h5 class="text-white">學習 CSS 濾鏡</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+            <a class="small-work" href="https://alsoson.github.io/css_finalfantasy/">
+              <div style="background:url(/images/work/flex_finalfantasy.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word">
+                  <h5 class="text-white">學習 flex 及背景應用</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+            <a class="small-work" href="https://alsoson.github.io/css_chess/">
+              <div style="background:url(/images/work/flex_chess.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word">
+                  <h5 class="text-white">學習 flex 用法</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+            <a class="small-work" href="https://alsoson.github.io/css_bear/">
+              <div style="background:url(/images/work/css_bear.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word">
+                  <h5 class="text-white">學習偽元素用法</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+            <a class="small-work" href="https://alsoson.github.io/css_injure/">
+              <div style="background:url(/images/work/css_injure.png) no-repeat center center/cover;" class="work-small-card">
+                <div class="flex-center work-small-card-word">
+                  <h5 class="text-white">學習背景漸層</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2">
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-2 px-2 text-right" style="display:flex;justify-content:end;align-items:flex-end">
+            <button type="button" class="btn btn-secondary text-right mt-auto" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div id="exp" class="py-5 mt-5" style="background:rgba(185, 243, 237,0.3);">
+    <div class="box">
+      <h6 class="text-center text-blueGreen" style="font-size:25px;font-weight:600">工作經驗<hr class="text-primary mx-auto" style="width:100px;"></h6>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="card mb-3" >
+            <div class="card-header text-darkblueGreen ">2022 年 3 月 - 2022年 8 月</div>
+            <div class="card-body">
+              <h5 class="card-title">泰山職業訓練場 - 前端網頁開發技術班</h5>
+              <p class="card-text" style="color:gray">936 小時的職前訓練，學習前端開發的技術</p>
+              <ul class="q-my-md q-mx-none">
+                <li class="q-my-sm">基本的 HTML、CSS 及 JavaScript 應用</li>
+                <li class="q-my-sm">使用 Bootstrap、jQuery、Vue.js、Node.js 及 MongoDB 進行網頁建置</li>
+                <li class="q-my-sm">透過 Axios API 串接資料及利用 Git 版本控制管理專案</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3" >
+            <div class="card-header text-darkblueGreen ">2021 年 8 月 - 2021年 10 月</div>
+            <div class="card-body">
+              <h5 class="card-title">電話客服人員 - 台哥大</h5>
+              
+              <ul class="q-my-md q-mx-none">
+                <li class="q-my-sm">負責接聽客戶問題，提供解決方案</li>
+                <li class="q-my-sm">負責客戶查詢、異動、諮詢服務、訂單受理、售後服務</li>
+                <li class="q-my-sm">負責安撫客戶客訴，並協助客戶訴怨解決問題</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card mb-3" >
+            <div class="card-header text-darkblueGreen ">2021 年 6 月</div>
+            <div class="card-body">
+              <h5 class="card-title">畢業於高雄科技大學 - 觀光管理系</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skill" class="my-5 pb-5">
+    <div class="box pb-5">
+      <h6 class="text-center text-blueGreen" style="font-size:25px;font-weight:600">專業技能<hr class="text-primary mx-auto" style="width:100px;"></h6>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card card-skill bg-darkBlueGreen text-white p-4" style="border-radius:16px;height:100%;">
+            <div>
+              <h5 class="mx-auto text-center mb-2">視覺設計</h5>
+            </div>
+            <div>
+              <ul>
+                <li>Illustrator</li>
+                <li>Photoshop </li>
+                <li>Balsamiq Wireframes</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card card-skill bg-darkBlueGreen text-white p-4" style="border-radius:16px;height:100%">
+            <div>
+              <h5 class="mx-auto text-center mb-2">前端開發</h5>
+            </div>
+            <div>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Vue.js</li>
+                <li>Quasar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card card-skill bg-darkBlueGreen text-white p-4" style="border-radius:16px;height:100%">
+            <div>
+              <h5 class="mx-auto text-center mb-2">後端技術</h5>
+            </div>
+            <div>
+              <ul>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Git 版本控管</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="./bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
